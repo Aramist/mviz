@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mouseviz"
+version = "0.0.0"
+authors = [
+  { name="NeuroStats Lab" },
+]
+description = "Tool for visualizing mouse recording sessions."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+dependencies = [
+    "h5py>=3.9.0",
+    "matplotlib>=3.8.0",
+    "joblib",
+    "opencv-python",
+    "numpy>=1.24.0",
+    "pyjson5>=1.6.0",
+    "tqdm>=4.66.0",
+    "shapely",
+]
+
+[project.urls]
+Homepage = "https://github.com/aramist/mouse_viz"
+Issues = "https://github.com/aramist/mouse_viz/issues"
